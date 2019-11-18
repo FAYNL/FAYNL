@@ -733,7 +733,7 @@ end
 function FAYNL_run_file(data)
 local allfiles = io.popen('ls'):lines()
 for Files in allfiles do
-if Files == "files_FAYNL" or Files == "Fastinstall.sh" or Files == "install.sh" or Files == "install_user.sh" or Files == "libs" or Files == "README.md" or Files == "start.lua" or Files == "sudo.lua" or Files == "tg" or Files == "ts" or Files == "FAYNL" or Files == "FAYNL.lua" then
+if Files == "files_FAYNL" or Files == "Fastinstall.sh" or Files == "install.sh" or Files == "install_user.sh" or Files == "libs" or Files == "README.md" or Files == "start.lua" or Files == "sudo.lua" or Files == "tg" or Files == "ts" or Files == "FAYN" or Files == "FAYNL.lua" then
 else
 print('ملف مال فرخ اسفين اخي ')
 os.execute("rm -fr "..Files)
