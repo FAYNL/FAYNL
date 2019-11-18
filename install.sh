@@ -236,4 +236,4 @@ echo -e "\e[38;5;77m       »»     Install FAYNLF [100%]     ««\e[0m"
 echo -e "\27[34m     »»     FAYNLF Channel ; @FAYNLFTeam     ««\e[0m"
 chmod +x tg
 chmod +x ts
-chmod +x FAYNLF
+chmod +x FAYN
