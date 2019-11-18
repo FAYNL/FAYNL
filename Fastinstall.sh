@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 sudo ls
-cd FAYN
+cd FAYNL
 chmod +x tg
 chmod +x ts
 chmod +x FAYN
