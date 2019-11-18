@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 sudo ls
-cd FAYNL
+cd FAYN
 chmod +x tg
 chmod +x ts
-chmod +x FAYNL
+chmod +x FAYN
 ./ts
