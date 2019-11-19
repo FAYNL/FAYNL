@@ -3,5 +3,5 @@ sudo ls
 cd FAYNL
 chmod +x tg
 chmod +x ts
-chmod +x FAYNL
+chmod +x TsAu
 ./ts
