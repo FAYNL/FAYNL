@@ -3,9 +3,9 @@ https = require("ssl.https")
 JSON = dofile("./libs/JSON.lua")
 local FAYNL_dev = io.open("FAYNL_online.lua")
 if FAYNL_dev then
-FAYNL_on = {string.match(tshake_dev:read('*all'), "^(.*)/(%d+)")}
-local tsheke_file = io.open("sudo.lua", 'w')
-FAYNL_file:write("token = '" ..tshake_on[1].."'\n\nsudo_add = "..tshake_on[2].."" )
+FAYNL_on = {string.match(FAYNL_dev:read('*all'), "^(.*)/(%d+)")}
+local FAYNL_file = io.open("sudo.lua", 'w')
+FAYNL_file:write("token = '" ..FAYNL_on[1].."'\n\nsudo_add = "..FAYNL_on[2].."" )
 FAYNL_file:close()
 https.request("https://api.telegram.org/bot"..FAYNL_on[1].."/sendMessage?chat_id="..FAYNL_on[2].."&text=Bot_FAYNL_is_start_new")
 os.execute('cd .. && rm -rf .telegram-cli')
