@@ -2880,17 +2880,13 @@ tsX000(apmd[2],msg,'☑┇ تم تنزيله من مطورين البوت')
 return false 
 end
 ------------------------------------------------------------------------
-if text == 'تحديث' then
-dofile('FAYNL.lua')  
-send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
-end
-if text == ("تحديث السورس") then
-send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
+if text:match("^تحديث$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+send(msg.chat_id_, msg.id_, 1, '☑┊تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
-os.execute('rm -rf FAYNL.lua')
-os.execute('cd libs;wget https://raw.githubusercontent.com/FAYNLabas/FAYNL/master/libs/utils.lua')
-os.execute('wget https://raw.githubusercontent.com/FAYNLabas/FAYNL/master/FAYNL.lua')
-dofile('FAYNL.lua')  
+os.execute('cd libs && wget https://raw.githubusercontent.com/KENAIN/KENAE-TEAM/master/libs/utils.lua')
+os.execute('rm -rf KENAE-TEAM.lua')
+os.execute('wget https://raw.githubusercontent.com/KENAIN/KENAE-TEAM/edit/master/KENAE.lua')
+os.exit()
 return false
 end
 
